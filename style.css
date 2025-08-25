@@ -159,6 +159,7 @@ svg{
 .wrapperRight{
     display: grid;
     grid-column: 2 / 3;
+    grid-template-rows: 40px 1fr 40px 1fr;
 }
 
 .wrapperLeft{
@@ -205,4 +206,47 @@ svg{
 .text > p{
     font-size: 1.2rem;
     margin: 20px;
+}
+
+.cardRight{
+    border-left: solid 10px rgb(0, 110, 255);
+    background-color: white;
+    box-shadow: 0px 5px 8px ;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.textRight{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px grey;
+}
+
+.grey{
+    color: #666666;
+}
+
+.textRight.noBorder{
+    border-bottom: none;
+}
+
+#announcements{
+    margin-top: 10px;
+    justify-self: center;
+}
+
+#trending{
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.profileStyle{
+    display: flex;
+    align-items: center;
+}
+
+.bigger{
+    font-size: 1.2rem;
 }
