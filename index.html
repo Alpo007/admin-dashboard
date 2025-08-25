@@ -9,18 +9,29 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="./images/magnify.svg" alt="magnifying glass" style="width: 20px; height: auto;">
-            <input type="text" placeholder="Search..">
-            <img src="./images/bell-ring-outline.svg" alt="bell ring" style="width: 20px; height: auto;">
-            <img src="" alt="profile picture" style="width: 20px; height: auto;">
-            <span>Alperen Isler</span>
-            <img src="" alt="profile picture" style="width: 50px; height: auto;">
-            <span>Hi there,<span>Alperen Isler (@Alpo)</span></span>
-            <ul>
-                <li><button>New</button></li>
-                <li><button>Upload</button></li>
-                <li><button>Share</button></li>
-            </ul>
+            <div class="search">
+                <img src="./images/magnify.svg" alt="magnifying glass" style="width: 25px; height: auto;">
+                <input id="searchbar" type="text" placeholder="Search..">
+            </div>
+            <div class="profile">
+                <a href=""><img src="./images/bell-ring-outline.svg" alt="bell ring" style="width: 25px; height: auto; margin-right: 20px;"></a>
+                <img src="./images/people-2388584_1280.png" alt="profile picture" style="width: 80px; height: auto;">
+                <span>Alperen Isler</span>
+            </div>
+            <div class="greeting">
+                <img src="./images/people-2388584_1280.png" alt="profile picture" style="width: 130px; height: auto;">
+                <div id="greetingText">
+                    <p id="greetingHello">Hi there,</p>
+                    <p id="greetingName">Alperen Isler (@Alpo)</p>
+                </div>
+            </div>
+            <div class="action">
+                <ul>
+                    <li><button>New</button></li>
+                    <li><button>Upload</button></li>
+                    <li><button>Share</button></li>
+                </ul>
+            </div>
         </div>
     
         <div class="main">
