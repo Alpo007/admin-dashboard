@@ -79,6 +79,11 @@ svg{
     border: none;
 }
 
+#searchbar:focus{
+    outline: none;
+    border: solid 3px rgb(0, 110, 255);
+}
+
 .header{
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -140,4 +145,64 @@ svg{
 .action button:hover{
     cursor: pointer;
     color: #CCC;
+}
+
+.main{
+    z-index: -1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    background-color: #CCC;
+}
+
+.wrapperRight{
+    display: grid;
+    grid-column: 2 / 3;
+}
+
+.wrapperLeft{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#projectsTitle{
+    justify-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    grid-column: 1 / -1;
+}
+
+.card{
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    border-left: solid 10px rgb(0, 110, 255);
+    border-radius: 10px;
+    height: 250px;
+    width: 550px;
+    background-color: white;
+    box-shadow: 0px 5px 8px ;
+    display: grid;
+    grid-template-rows: 1fr;
+    z-index: 0;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    justify-self: end;
+    margin: 10px;
+}
+
+.cardTitle{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.text > p{
+    font-size: 1.2rem;
+    margin: 20px;
 }
